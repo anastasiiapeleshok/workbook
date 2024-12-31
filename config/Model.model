@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="2" loadPath="workbook" entityName="workbook" version="26" name="workbook" lastUpdated="2024-12-31T10:18:29.053+02:00" lastUpdatedBy="admin" id="admin:MODEL:workbook" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="2" loadPath="workbook" entityName="workbook" version="32" name="workbook" lastUpdated="2024-12-31T10:21:43.526+02:00" lastUpdatedBy="admin" id="admin:MODEL:workbook" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <datalists entityCode="3" entityName="Stock Fundamental" version="25" name="Stock Fundamental" created="2024-12-31T10:18:17.454+02:00" createdBy="admin" lastUpdated="2024-12-31T10:18:17.454+02:00" lastUpdatedBy="admin" id="Stock Fundamental">
         <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Symbol" initialized="true" id="Symbol"/>
         <dataFields type="text" fieldCode="101" rawType="java.lang.String" allowNull="true" name="Name" initialized="true" id="Name"/>
@@ -18,7 +18,7 @@
             <defaultValue source="id"/>
         </dataFields>
     </datalists>
-    <datalists entityCode="5" entityName="Price Target" version="25" config="true" name="Price Target" dirty="true" created="2024-12-31T10:18:17.457+02:00" createdBy="admin" lastUpdated="2024-12-31T10:18:29.053+02:00" lastUpdatedBy="admin" id="Price Target">
+    <datalists entityCode="5" entityName="Price Target" version="25" config="true" name="Price Target" created="2024-12-31T10:18:17.457+02:00" createdBy="admin" lastUpdated="2024-12-31T10:18:29.053+02:00" lastUpdatedBy="admin" id="Price Target">
         <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Symbol" initialized="true" id="Symbol"/>
         <dataFields type="decimal" format="0.00" fieldCode="101" rawType="java.math.BigDecimal" allowNull="true" name="Price Target" initialized="true" id="Price Target"/>
         <dataFields type="decimal" format="0.00%" fieldCode="102" rawType="java.math.BigDecimal" allowNull="true" name="column3" initialized="true" id="column3"/>
@@ -52,11 +52,57 @@
             <defaultValue source="id"/>
         </dataFields>
     </datalists>
+    <datalists entityCode="7" entityName="Credit Offer" version="32" name="Credit Offer" created="2024-12-31T10:21:43.524+02:00" createdBy="admin" lastUpdated="2024-12-31T10:21:43.524+02:00" lastUpdatedBy="admin" id="Credit Offer">
+        <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Credit Offer Decision" initialized="true" id="Credit Offer Decision"/>
+        <dataFields type="decimal" format="0.00%" fieldCode="101" rawType="java.math.BigDecimal" allowNull="true" name="Probability Default" initialized="true" id="Probability Default"/>
+        <dataFields type="decimal" format="0.00%" fieldCode="102" rawType="java.math.BigDecimal" allowNull="true" name="Expected Return on Asset" initialized="true" id="Expected Return on Asset"/>
+        <dataFields type="decimal" format="0.00%" fieldCode="103" rawType="java.math.BigDecimal" allowNull="true" name="Discretionary Spending as Percent of Income" initialized="true" id="Discretionary Spending as Percent of Income"/>
+        <dataFields type="boolean" fieldCode="104" rawType="java.lang.Boolean" allowNull="true" name="Current Strategy" initialized="true" id="Current Strategy"/>
+        <dataFields type="boolean" fieldCode="105" rawType="java.lang.Boolean" allowNull="true" name="Approved" initialized="true" id="Approved"/>
+        <dataFields type="text" fieldCode="106" rawType="java.lang.String" allowNull="true" name="Strategy" initialized="true" id="Strategy"/>
+        <dataFields type="integer" fieldCode="107" rawType="java.lang.Long" allowNull="true" name="Offer Position" initialized="true" id="Offer Position"/>
+        <dataFields type="boolean" fieldCode="108" rawType="java.lang.Boolean" allowNull="true" name="Best Offer" initialized="true" id="Best Offer"/>
+        <dataFields type="text" fieldCode="109" rawType="java.lang.String" allowNull="true" name="Outcome" initialized="true" id="Outcome"/>
+        <dataFields type="text" fieldCode="110" rawType="java.lang.String" allowNull="true" name="Application ID" initialized="true" id="Application ID"/>
+        <dataFields type="currency" fieldCode="111" rawType="java.math.BigDecimal" allowNull="true" name="Requested Loan Amount" initialized="true" id="Requested Loan Amount"/>
+        <dataFields type="currency" fieldCode="112" rawType="java.math.BigDecimal" allowNull="true" name="Loan Amount Counter" initialized="true" id="Loan Amount Counter"/>
+        <dataFields type="integer" fieldCode="113" rawType="java.lang.Long" allowNull="true" name="Term" initialized="true" id="Term"/>
+        <dataFields type="decimal" format="0.000%" fieldCode="114" rawType="java.math.BigDecimal" allowNull="true" name="Rate" initialized="true" id="Rate"/>
+        <dataFields type="currency" fieldCode="115" rawType="java.math.BigDecimal" allowNull="true" name="Payment" initialized="true" id="Payment"/>
+        <dataFields type="currency" fieldCode="116" rawType="java.math.BigDecimal" allowNull="true" name="Monthly Cash Flow" initialized="true" id="Monthly Cash Flow"/>
+        <dataFields type="currency" fieldCode="117" rawType="java.math.BigDecimal" allowNull="true" name="Monthly Discretionary Spend" initialized="true" id="Monthly Discretionary Spend"/>
+        <dataFields type="currency" fieldCode="118" rawType="java.math.BigDecimal" allowNull="true" name="Monthly Debt" initialized="true" id="Monthly Debt"/>
+        <dataFields type="decimal" format="0.0%" fieldCode="119" rawType="java.math.BigDecimal" allowNull="true" name="Debt to Income" initialized="true" id="Debt to Income"/>
+        <dataFields type="decimal" format="0.0%" fieldCode="120" rawType="java.math.BigDecimal" allowNull="true" name="Payment to Income" initialized="true" id="Payment to Income"/>
+        <dataFields type="currency" fieldCode="121" rawType="java.math.BigDecimal" allowNull="true" name="Monthly Income" initialized="true" id="Monthly Income"/>
+        <dataFields type="integer" fieldCode="122" rawType="java.lang.Long" allowNull="true" name="Credit Score" initialized="true" id="Credit Score"/>
+        <dataFields type="integer" fieldCode="123" rawType="java.lang.Long" allowNull="true" name="Zest Score" initialized="true" id="Zest Score"/>
+        <dataFields type="text" fieldCode="124" rawType="java.lang.String" allowNull="true" name="Decline Rules" initialized="true" id="Decline Rules"/>
+        <dataFields type="text" fieldCode="125" rawType="java.lang.String" allowNull="true" name="Program:Application ID" initialized="true" id="Program:Application ID"/>
+        <dataFields type="text" fieldCode="126" rawType="java.lang.String" allowNull="true" name="Loan Purpose" initialized="true" id="Loan Purpose"/>
+        <dataFields type="currency" fieldCode="127" rawType="java.math.BigDecimal" allowNull="true" name="Discretionary Spend" initialized="true" id="Discretionary Spend"/>
+        <dataFields type="integer" fieldCode="128" rawType="java.lang.Long" allowNull="true" name="Age" initialized="true" id="Age"/>
+        <dataFields type="decimal" format="0.00" fieldCode="129" rawType="java.math.BigDecimal" allowNull="true" name="Credit History Years" initialized="true" id="Credit History Years"/>
+        <dataFields type="integer" fieldCode="130" rawType="java.lang.Long" allowNull="true" name="Num Trades" initialized="true" id="Num Trades"/>
+        <dataFields type="integer" fieldCode="131" rawType="java.lang.Long" allowNull="true" name="Num Public Records" initialized="true" id="Num Public Records"/>
+        <dataFields type="integer" fieldCode="132" rawType="java.lang.Long" allowNull="true" name="Num Collections" initialized="true" id="Num Collections"/>
+        <dataFields type="decimal" format="0.00%" fieldCode="133" rawType="java.math.BigDecimal" allowNull="true" name="Approval %" initialized="true" id="Approval %"/>
+        <dataFields type="integer" fieldCode="134" rawType="java.lang.Long" allowNull="true" name="Credit Score Bin" initialized="true" id="Credit Score Bin"/>
+        <dataFields type="text" fieldCode="135" rawType="java.lang.String" allowNull="true" name="Financials Profile" initialized="true" id="Financials Profile"/>
+        <dataFields type="integer" fieldCode="136" rawType="java.lang.Long" allowNull="true" name="# Non-sufficient Funds" initialized="true" id="# Non-sufficient Funds"/>
+        <dataFields type="text" fieldCode="137" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="138" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
     <views allColumns="true" default="true" modelView="true" entityName="workbook" name="workbook" description="Default view for list workbook" id="workbook"/>
     <views allColumns="true" default="true" entityName="Stock Fundamental" name="Stock Fundamental" description="Default view for list Stock Fundamental" id="Stock Fundamental"/>
     <views allColumns="true" default="true" entityName="Price Target" name="Price Target" description="Default view for list Price Target" id="Price Target"/>
     <views allColumns="true" default="true" entityName="Sector Outlook" name="Sector Outlook" description="Default view for list Sector Outlook" id="Sector Outlook"/>
     <views allColumns="true" default="true" entityName="Strategy" name="Strategy" description="Default view for list Strategy" id="Strategy"/>
+    <views allColumns="true" default="true" entityName="Credit Offer" name="Credit Offer" description="Default view for list Credit Offer" id="Credit Offer"/>
     <connectors layoutDetected="true" entityName="Stock Fundamental" version="25" name="Stock Fundamental" created="2024-12-31T10:18:17.455+02:00" createdBy="admin" lastUpdated="2024-12-31T10:18:17.455+02:00" lastUpdatedBy="admin" id="Stock Fundamental">
         <connectorFields columnIndex="0" ignore="false" mapField="Symbol" type="text" rawType="String" allowNull="true" name="Symbol" id="Symbol"/>
         <connectorFields columnIndex="1" ignore="false" mapField="Name" type="text" rawType="String" allowNull="true" name="Name" id="Name"/>
@@ -137,4 +183,59 @@
             </excelMedia>
         </mediaConfig>
     </connectors>
+    <connectors layoutDetected="true" entityName="Credit Offer" version="32" name="Credit Offer" created="2024-12-31T10:21:43.526+02:00" createdBy="admin" lastUpdated="2024-12-31T10:21:43.526+02:00" lastUpdatedBy="admin" id="Credit Offer">
+        <connectorFields columnIndex="0" ignore="false" mapField="Credit Offer Decision" type="text" rawType="String" allowNull="true" name="Credit Offer Decision" id="Credit Offer Decision"/>
+        <connectorFields columnIndex="1" ignore="false" mapField="Probability Default" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="Probability Default" id="Probability Default"/>
+        <connectorFields columnIndex="2" ignore="false" mapField="Expected Return on Asset" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="Expected Return on Asset" id="Expected Return on Asset"/>
+        <connectorFields columnIndex="3" ignore="false" mapField="Discretionary Spending as Percent of Income" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="Discretionary Spending as Percent of Income" id="Discretionary Spending as Percent of Income"/>
+        <connectorFields columnIndex="4" ignore="false" mapField="Current Strategy" type="boolean" rawType="Boolean" allowNull="true" name="Current Strategy" id="Current Strategy"/>
+        <connectorFields columnIndex="5" ignore="false" mapField="Approved" type="boolean" rawType="Boolean" allowNull="true" name="Approved" id="Approved"/>
+        <connectorFields columnIndex="6" ignore="false" mapField="Strategy" type="text" rawType="String" allowNull="true" name="Strategy" id="Strategy"/>
+        <connectorFields columnIndex="7" ignore="false" mapField="Offer Position" type="integer" rawType="Long" allowNull="true" name="Offer Position" id="Offer Position"/>
+        <connectorFields columnIndex="8" ignore="false" mapField="Best Offer" type="boolean" rawType="Boolean" allowNull="true" name="Best Offer" id="Best Offer"/>
+        <connectorFields columnIndex="9" ignore="false" mapField="Outcome" type="text" rawType="String" allowNull="true" name="Outcome" id="Outcome"/>
+        <connectorFields columnIndex="10" ignore="false" mapField="Application ID" type="text" rawType="String" allowNull="true" name="Application ID" id="Application ID"/>
+        <connectorFields columnIndex="11" ignore="false" mapField="Requested Loan Amount" type="currency" rawType="BigDecimal" allowNull="true" name="Requested Loan Amount" id="Requested Loan Amount"/>
+        <connectorFields columnIndex="12" ignore="false" mapField="Loan Amount Counter" type="currency" rawType="BigDecimal" allowNull="true" name="Loan Amount Counter" id="Loan Amount Counter"/>
+        <connectorFields columnIndex="13" ignore="false" mapField="Term" type="integer" rawType="Long" allowNull="true" name="Term" id="Term"/>
+        <connectorFields columnIndex="14" ignore="false" mapField="Rate" type="decimal" format="0.000%" rawType="BigDecimal" allowNull="true" name="Rate" id="Rate"/>
+        <connectorFields columnIndex="15" ignore="false" mapField="Payment" type="currency" rawType="BigDecimal" allowNull="true" name="Payment" id="Payment"/>
+        <connectorFields columnIndex="16" ignore="false" mapField="Monthly Cash Flow" type="currency" rawType="BigDecimal" allowNull="true" name="Monthly Cash Flow" id="Monthly Cash Flow"/>
+        <connectorFields columnIndex="17" ignore="false" mapField="Monthly Discretionary Spend" type="currency" rawType="BigDecimal" allowNull="true" name="Monthly Discretionary Spend" id="Monthly Discretionary Spend"/>
+        <connectorFields columnIndex="18" ignore="false" mapField="Monthly Debt" type="currency" rawType="BigDecimal" allowNull="true" name="Monthly Debt" id="Monthly Debt"/>
+        <connectorFields columnIndex="19" ignore="false" mapField="Debt to Income" type="decimal" format="0.0%" rawType="BigDecimal" allowNull="true" name="Debt to Income" id="Debt to Income"/>
+        <connectorFields columnIndex="20" ignore="false" mapField="Payment to Income" type="decimal" format="0.0%" rawType="BigDecimal" allowNull="true" name="Payment to Income" id="Payment to Income"/>
+        <connectorFields columnIndex="21" ignore="false" mapField="Monthly Income" type="currency" rawType="BigDecimal" allowNull="true" name="Monthly Income" id="Monthly Income"/>
+        <connectorFields columnIndex="22" ignore="false" mapField="Credit Score" type="integer" rawType="Long" allowNull="true" name="Credit Score" id="Credit Score"/>
+        <connectorFields columnIndex="23" ignore="false" mapField="Zest Score" type="integer" rawType="Long" allowNull="true" name="Zest Score" id="Zest Score"/>
+        <connectorFields columnIndex="24" ignore="false" mapField="Decline Rules" type="text" rawType="String" allowNull="true" name="Decline Rules" id="Decline Rules"/>
+        <connectorFields columnIndex="25" ignore="false" mapField="Program:Application ID" type="text" rawType="String" allowNull="true" name="Program:Application ID" id="Program:Application ID"/>
+        <connectorFields columnIndex="26" ignore="false" mapField="Loan Purpose" type="text" rawType="String" allowNull="true" name="Loan Purpose" id="Loan Purpose"/>
+        <connectorFields columnIndex="27" ignore="false" mapField="Discretionary Spend" type="currency" rawType="BigDecimal" allowNull="true" name="Discretionary Spend" id="Discretionary Spend"/>
+        <connectorFields columnIndex="28" ignore="false" mapField="Age" type="integer" rawType="Long" allowNull="true" name="Age" id="Age"/>
+        <connectorFields columnIndex="29" ignore="false" mapField="Credit History Years" type="decimal" format="0.00" rawType="BigDecimal" allowNull="true" name="Credit History Years" id="Credit History Years"/>
+        <connectorFields columnIndex="30" ignore="false" mapField="Num Trades" type="integer" rawType="Long" allowNull="true" name="Num Trades" id="Num Trades"/>
+        <connectorFields columnIndex="31" ignore="false" mapField="Num Public Records" type="integer" rawType="Long" allowNull="true" name="Num Public Records" id="Num Public Records"/>
+        <connectorFields columnIndex="32" ignore="false" mapField="Num Collections" type="integer" rawType="Long" allowNull="true" name="Num Collections" id="Num Collections"/>
+        <connectorFields columnIndex="33" ignore="false" mapField="Approval %" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="Approval %" id="Approval %"/>
+        <connectorFields columnIndex="34" ignore="false" mapField="Credit Score Bin" type="integer" rawType="Long" allowNull="true" name="Credit Score Bin" id="Credit Score Bin"/>
+        <connectorFields columnIndex="35" ignore="false" mapField="Financials Profile" type="text" rawType="String" allowNull="true" name="Financials Profile" id="Financials Profile"/>
+        <connectorFields columnIndex="36" ignore="false" mapField="# Non-sufficient Funds" type="integer" rawType="Long" allowNull="true" name="# Non-sufficient Funds" id="# Non-sufficient Funds"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="Credit Offer.xlsx">
+            <fileSource>
+                <dataSourceRefs>Credit Offer.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId3" componentName="Credit Offer" displayName="Credit Offer"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"DATALIST:Stock Fundamental":{"x":126,"y":-131},"CONNECTOR:Stock Fundamental":{"x":206,"y":-192},"CONNECTOR:Strategy":{"x":424,"y":245},"CONNECTOR:Price Target":{"x":-409,"y":-279},"DATALIST:Price Target":{"x":-462,"y":-194},"DATALIST:Strategy":{"x":509,"y":190},"CONNECTOR:Sector Outlook":{"x":-799,"y":79},"DATALIST:Sector Outlook":{"x":-898,"y":88}}</body>
+    </extra>
 </ns3:modelConfig>
